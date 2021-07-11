@@ -7,9 +7,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MaterialModule } from './material/material.module';
 import { MenuComponent } from './menu/menu.component';
+import { MoviesListComponent } from './movies/movies-list/movies-list.component';
 
 @NgModule({
-  declarations: [AppComponent, MenuComponent],
+  declarations: [AppComponent, MenuComponent, MoviesListComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

@@ -1,9 +1,4 @@
 .container {
-  margin: 35px;
+  margin: 20px 35px;
 }
 
-.movie-container {
-  border: 1px solid black;
-  margin-bottom: 1rem;
-  padding: 1rem;
-}
