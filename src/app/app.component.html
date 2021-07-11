@@ -1,5 +1,18 @@
 <app-menu></app-menu>
 
 <div class="container">
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur commodi nesciunt asperiores, ad eligendi animi officiis amet doloremque fugiat corrupti beatae maxime? Ea, repellat. Quam iusto consequuntur doloremque. Eos, est.
+  <div>
+    {{ title }}
+  </div>
+  <div>The sum of 2 + 2 is {{ 2 + 2 }}</div>
+  <div>The double of 3 is {{ duplicateNumber(3) }}</div>
+  <div>
+    <h2>Movie Data</h2>
+    <div>
+     <h3> {{ movie.title }}</h3>
+    </div>
+    <div>
+      {{ movie.releaseDate }}
+    </div>
+  </div>
 </div>
