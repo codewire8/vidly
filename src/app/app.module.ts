@@ -10,9 +10,11 @@ import { MenuComponent } from './menu/menu.component';
 import { MoviesListComponent } from './movies/movies-list/movies-list.component';
 import { GenericListComponent } from './utilities/generic-list/generic-list.component';
 import { RatingComponent } from './utilities/rating/rating.component';
+import { HomeComponent } from './home/home.component';
+import { IndexGenreComponent } from './genres/index-genre/index-genre.component';
 
 @NgModule({
-  declarations: [AppComponent, MenuComponent, MoviesListComponent, GenericListComponent, RatingComponent],
+  declarations: [AppComponent, MenuComponent, MoviesListComponent, GenericListComponent, RatingComponent, HomeComponent, IndexGenreComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
