@@ -4,13 +4,18 @@
   src="https://media0.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif?cid=ecf05e471280620nj00q00euy6ak3q396ovfo3c780p54bxn&rid=giphy.gif&ct=g"
   alt=""
 />
-<div *ngFor="let movie of movies; let index = index" class="movie-container">
-  <div>{{ index }} ) {{ movie.title | uppercase }} <button (click)="remove(index)">Remove</button></div>
+<ng-container *ngIf="movies && movies.length > 0">
+  <div *ngFor="let movie of movies; let index = index" class="movie-container">
+    <div>
+      {{ index }} ) {{ movie.title | uppercase }}
+      <button (click)="remove(index)">Remove</button>
+    </div>
 
-  <div>
-    {{ movie.releaseDate | date: "dd-MM-yyyy" }}
+    <div>
+      {{ movie.releaseDate | date: "dd-MM-yyyy" }}
+    </div>
+    <div>
+      {{ movie.price | currency }}
+    </div>
   </div>
-  <div>
-    {{ movie.price | currency }}
-  </div>
-</div>
+</ng-container>
