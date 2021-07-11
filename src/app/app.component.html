@@ -8,6 +8,14 @@
   <div>The double of 3 is {{ duplicateNumber(3) }}</div>
   <br />
   <h2>Movie Data</h2>
+  <div *ngIf="movies?.length === 0">
+    There are no records to display
+  </div>
+  <img
+    *ngIf="!movies"
+    src="https://media0.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif?cid=ecf05e471280620nj00q00euy6ak3q396ovfo3c780p54bxn&rid=giphy.gif&ct=g"
+    alt=""
+  />
   <div *ngFor="let movie of movies; let index = index" class="movie-container">
     <div>{{ index }} ) {{ movie.title | uppercase }}</div>
     <div>
