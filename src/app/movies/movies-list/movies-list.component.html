@@ -5,7 +5,8 @@
   alt=""
 />
 <div *ngFor="let movie of movies; let index = index" class="movie-container">
-  <div>{{ index }} ) {{ movie.title | uppercase }}</div>
+  <div>{{ index }} ) {{ movie.title | uppercase }} <button (click)="remove(index)">Remove</button></div>
+
   <div>
     {{ movie.releaseDate | date: "dd-MM-yyyy" }}
   </div>
