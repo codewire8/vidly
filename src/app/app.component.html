@@ -6,13 +6,17 @@
   </div>
   <div>The sum of 2 + 2 is {{ 2 + 2 }}</div>
   <div>The double of 3 is {{ duplicateNumber(3) }}</div>
+  <br>
   <div>
     <h2>Movie Data</h2>
     <div>
-     <h3> {{ movie.title }}</h3>
+      {{ movie.title | uppercase }}
     </div>
     <div>
-      {{ movie.releaseDate }}
+      {{ movie.releaseDate | date:"dd-MM-yyyy" }}
+    </div>
+    <div>
+      {{ movie.price | currency }}
     </div>
   </div>
 </div>

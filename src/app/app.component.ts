@@ -11,6 +11,7 @@ export class AppComponent {
   movie = {
     title: 'Spider Man',
     releaseDate: new Date(),
+    price: 1400.99
   };
 
   duplicateNumber(n: number) {
