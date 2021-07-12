@@ -12,9 +12,15 @@ import { GenericListComponent } from './utilities/generic-list/generic-list.comp
 import { RatingComponent } from './utilities/rating/rating.component';
 import { HomeComponent } from './home/home.component';
 import { IndexGenreComponent } from './genres/index-genre/index-genre.component';
+import { CreateGenreComponent } from './genres/create-genre/create-genre.component';
+import { IndexActorsComponent } from './actors/index-actors/index-actors.component';
+import { CreateActorComponent } from './actors/create-actor/create-actor.component';
+import { IndexMovieTheatersComponent } from './movietheaters/index-movie-theaters/index-movie-theaters.component';
+import { CreateMovieTheatersComponent } from './movietheaters/create-movie-theaters/create-movie-theaters.component';
+import { CreateMovieComponent } from './movies/create-movie/create-movie.component';
 
 @NgModule({
-  declarations: [AppComponent, MenuComponent, MoviesListComponent, GenericListComponent, RatingComponent, HomeComponent, IndexGenreComponent],
+  declarations: [AppComponent, MenuComponent, MoviesListComponent, GenericListComponent, RatingComponent, HomeComponent, IndexGenreComponent, CreateGenreComponent, IndexActorsComponent, CreateActorComponent, IndexMovieTheatersComponent, CreateMovieTheatersComponent, CreateMovieComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
