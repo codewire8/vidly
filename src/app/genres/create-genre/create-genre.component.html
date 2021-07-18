@@ -1,2 +1,14 @@
 <h2>Create Genre</h2>
-<button mat-flat-button color="primary" (click)="saveChanges()">Save Changes</button>
+<form (submit)="saveChanges()" [formGroup]="form">
+  <mat-form-field appearance="fill">
+    <mat-label>Name*</mat-label>
+    <input formControlName="name" matInput />
+    <mat-error *ngIf="form.invalid">{{getErrorMessage()}}</mat-error>
+  </mat-form-field>
+  <div>
+    <button mat-flat-button color="primary" [disabled]="form.invalid">
+        Save Changes
+      </button>  
+      <a mat-stroked-button routerLink="/genres">Cancel</a>    
+  </div>
+</form>

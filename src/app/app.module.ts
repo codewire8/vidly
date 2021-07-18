@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { MaterialModule } from './material/material.module';
 import { MenuComponent } from './menu/menu.component';
@@ -24,12 +25,31 @@ import { EditMovieTheaterComponent } from './movietheaters/edit-movie-theater/ed
 import { EditMovieComponent } from './movies/edit-movie/edit-movie.component';
 
 @NgModule({
-  declarations: [AppComponent, MenuComponent, MoviesListComponent, GenericListComponent, RatingComponent, HomeComponent, IndexGenreComponent, CreateGenreComponent, IndexActorsComponent, CreateActorComponent, IndexMovieTheatersComponent, CreateMovieTheatersComponent, CreateMovieComponent, EditActorComponent, EditGenreComponent, EditMovieTheaterComponent, EditMovieComponent],
+  declarations: [
+    AppComponent,
+    MenuComponent,
+    MoviesListComponent,
+    GenericListComponent,
+    RatingComponent,
+    HomeComponent,
+    IndexGenreComponent,
+    CreateGenreComponent,
+    IndexActorsComponent,
+    CreateActorComponent,
+    IndexMovieTheatersComponent,
+    CreateMovieTheatersComponent,
+    CreateMovieComponent,
+    EditActorComponent,
+    EditGenreComponent,
+    EditMovieTheaterComponent,
+    EditMovieComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
