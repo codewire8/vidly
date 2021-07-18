@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { actorCreationDTO } from '../actors.models';
 
 @Component({
   selector: 'app-create-actor',
@@ -11,7 +12,8 @@ export class CreateActorComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  saveChanges() {
+  saveChanges(actorCreationDTO: actorCreationDTO) {
+    console.log(actorCreationDTO);
     this.router.navigate(['/actors']);
   }
 }
