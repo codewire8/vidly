@@ -17,18 +17,19 @@ import { IndexGenreComponent } from './genres/index-genre/index-genre.component'
 import { CreateGenreComponent } from './genres/create-genre/create-genre.component';
 import { IndexActorsComponent } from './actors/index-actors/index-actors.component';
 import { CreateActorComponent } from './actors/create-actor/create-actor.component';
-import { IndexMovieTheatersComponent } from './movietheaters/index-movie-theaters/index-movie-theaters.component';
-import { CreateMovieTheatersComponent } from './movietheaters/create-movie-theaters/create-movie-theaters.component';
+import { IndexMovieTheatersComponent } from './movie-theaters/index-movie-theaters/index-movie-theaters.component';
+import { CreateMovieTheatersComponent } from './movie-theaters/create-movie-theater/create-movie-theaters.component';
 import { CreateMovieComponent } from './movies/create-movie/create-movie.component';
 import { EditActorComponent } from './actors/edit-actor/edit-actor.component';
 import { EditGenreComponent } from './genres/edit-genre/edit-genre.component';
-import { EditMovieTheaterComponent } from './movietheaters/edit-movie-theater/edit-movie-theater.component';
+import { EditMovieTheaterComponent } from './movie-theaters/edit-movie-theater/edit-movie-theater.component';
 import { EditMovieComponent } from './movies/edit-movie/edit-movie.component';
 import { FormGenreComponent } from './genres/form-genre/form-genre.component';
 import { MovieFilterComponent } from './movies/movie-filter/movie-filter.component';
 import { FormActorComponent } from './actors/form-actor/form-actor.component';
 import { InputImgComponent } from './utilities/input-img/input-img.component';
 import { InputMarkdownComponent } from './utilities/input-markdown/input-markdown.component';
+import { MovieTheaterFormComponent } from './movie-theaters/movie-theater-form/movie-theater-form.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { InputMarkdownComponent } from './utilities/input-markdown/input-markdow
     FormActorComponent,
     InputImgComponent,
     InputMarkdownComponent,
+    MovieTheaterFormComponent,
   ],
   imports: [
     BrowserModule,

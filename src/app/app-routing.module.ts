@@ -10,9 +10,9 @@ import { HomeComponent } from './home/home.component';
 import { CreateMovieComponent } from './movies/create-movie/create-movie.component';
 import { EditMovieComponent } from './movies/edit-movie/edit-movie.component';
 import { MovieFilterComponent } from './movies/movie-filter/movie-filter.component';
-import { CreateMovieTheatersComponent } from './movietheaters/create-movie-theaters/create-movie-theaters.component';
-import { EditMovieTheaterComponent } from './movietheaters/edit-movie-theater/edit-movie-theater.component';
-import { IndexMovieTheatersComponent } from './movietheaters/index-movie-theaters/index-movie-theaters.component';
+import { CreateMovieTheatersComponent } from './movie-theaters/create-movie-theater/create-movie-theaters.component';
+import { EditMovieTheaterComponent } from './movie-theaters/edit-movie-theater/edit-movie-theater.component';
+import { IndexMovieTheatersComponent } from './movie-theaters/index-movie-theaters/index-movie-theaters.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
