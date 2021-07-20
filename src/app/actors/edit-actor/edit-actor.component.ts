@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { actorCreationDTO } from '../actors.models';
+import { actorCreationDTO, actorDTO } from '../actors.models';
 
 @Component({
   selector: 'app-edit-actor',
@@ -10,9 +10,10 @@ import { actorCreationDTO } from '../actors.models';
 export class EditActorComponent implements OnInit {
   constructor(private activatedRouted: ActivatedRoute) {}
 
-  model: actorCreationDTO = {
+  model: actorDTO = {
     name: 'Tom Holland',
     dateOfBirth: new Date(),
+    picture: 'https://m.media-amazon.com/images/M/MV5BNzZiNTEyNTItYjNhMS00YjI2LWIwMWQtZmYwYTRlNjMyZTJjXkEyXkFqcGdeQXVyMTExNzQzMDE0._V1_UX214_CR0,0,214,317_AL_.jpg'
   };
 
   ngOnInit(): void {

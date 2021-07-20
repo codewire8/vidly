@@ -11,6 +11,12 @@
     <mat-datepicker #picker></mat-datepicker>
     <mat-error>The name field is required</mat-error>
   </mat-form-field>
+
+  <app-input-img
+    [urlCurrnentImage]="model?.picture"
+    (onImageSelected)="onImageSelected($event)"
+  ></app-input-img>
+
   <div>
     <button mat-flat-button color="primary" [disabled]="form.invalid">
       Save Changes

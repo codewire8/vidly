@@ -28,6 +28,7 @@ export class FormActorComponent implements OnInit {
         },
       ],
       dateOfBirth: '',
+      picture: '',
     });
 
     if (this.model !== undefined) {
@@ -37,5 +38,9 @@ export class FormActorComponent implements OnInit {
 
   saveChanges() {
     this.onSaveChanges.emit(this.form.value);
+  }
+
+  onImageSelected(image) {
+    this.form.get('picture')?.setValue(image);
   }
 }
