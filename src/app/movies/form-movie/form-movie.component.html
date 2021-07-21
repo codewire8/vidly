@@ -36,11 +36,18 @@
   >
   </app-input-markdown>
 
-  <h4>Select Genre(s)</h4>
+  <h4>Select Genres</h4>
 
   <app-multiple-selector
     [nonSelectedItems]="nonSelectedGenres"
     [selectedItems]="selectedGenres"
+  ></app-multiple-selector>
+
+  <h4>Select Movie Theaters</h4>
+
+  <app-multiple-selector
+    [nonSelectedItems]="nonSelectedMovieTheaters"
+    [selectedItems]="selectedMovieTheaters"
   ></app-multiple-selector>
 
   <div>

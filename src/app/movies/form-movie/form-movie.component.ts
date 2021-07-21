@@ -29,8 +29,24 @@ export class FormMovieComponent implements OnInit {
       value: 'Comedy',
     },
   ];
-
   selectedGenres: multipleSelectorModel[] = [];
+
+  nonSelectedMovieTheaters: multipleSelectorModel[] = [
+    {
+      key: 1,
+      value: 'Agora',
+    },
+    {
+      key: 2,
+      value: 'Sambil',
+    },
+    {
+      key: 3,
+      value: 'Megacentro',
+    },
+  ];
+
+  selectedMovieTheaters: multipleSelectorModel[] = [];
 
   ngOnInit(): void {
     this.form = this.formBuilder.group({
@@ -46,6 +62,7 @@ export class FormMovieComponent implements OnInit {
       releaseDate: '',
       poster: '',
       genresIds: '',
+      movieTheatersIds: ''
     });
 
     if (this.model !== undefined) {
@@ -62,8 +79,13 @@ export class FormMovieComponent implements OnInit {
   }
 
   saveChanges() {
+    
     const genresIds = this.selectedGenres.map((value) => value.key);
     this.form.get('genresIds').setValue(genresIds);
+
+    const movieTheatersIds = this.selectedMovieTheaters.map((value) => value.key);
+    this.form.get('movieTheatersIds').setValue(movieTheatersIds);
+
     this.onSaveChanges.emit(this.form.value);
   }
 }
