@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { movieCreationDTO } from '../movies.model';
 
 @Component({
   selector: 'app-create-movie',
@@ -11,7 +12,8 @@ export class CreateMovieComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  saveChanges() {
+  saveChanges(movieCreationDTO: movieCreationDTO) {
+    console.log(movieCreationDTO);
     this.router.navigate(['/']);
   }
 }
