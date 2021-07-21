@@ -58,7 +58,7 @@ import { MapComponent } from './utilities/map/map.component';
     InputImgComponent,
     InputMarkdownComponent,
     MovieTheaterFormComponent,
-    MapComponent
+    MapComponent,
   ],
   imports: [
     BrowserModule,
