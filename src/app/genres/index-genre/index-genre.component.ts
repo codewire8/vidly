@@ -15,7 +15,6 @@ export class IndexGenreComponent implements OnInit {
 
   ngOnInit(): void {
     this.genresService.getAll().subscribe((genres) => {
-      console.log(genres);
       this.genres = genres;
     });
   }
