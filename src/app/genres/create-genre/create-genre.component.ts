@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { parseWebApiErrors } from 'src/app/utilities/utils';
 import { genreCreationDTO } from '../genres.model';
 import { GenresService } from '../genres.service';
 
@@ -10,6 +11,8 @@ import { GenresService } from '../genres.service';
   styleUrls: ['./create-genre.component.css'],
 })
 export class CreateGenreComponent implements OnInit {
+  errors: string[] = [];
+
   constructor(private router: Router, private genreService: GenresService) {}
 
   form: FormGroup;
@@ -21,7 +24,7 @@ export class CreateGenreComponent implements OnInit {
       () => {
         this.router.navigate(['/genres']);
       },
-      (error) => console.error(error)
+      (error) => (this.errors = parseWebApiErrors(error))
     );
   }
 }

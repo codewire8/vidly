@@ -27,7 +27,7 @@ export class FormGenreComponent implements OnInit {
           validators: [
             Validators.required,
             Validators.minLength(3),
-            Validators.pattern('^([A-Z][a-z]*((\\s[A-Za-z])?[a-z]*)*)$'),
+            //Validators.pattern('^([A-Z][a-z]*((\\s[A-Za-z])?[a-z]*)*)$'),
           ],
         },
       ],
